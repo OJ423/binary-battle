@@ -1,0 +1,90 @@
+body {
+  background: #332941 ;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+}
+ 
+h1, h2, h3, h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+#game {
+  width: 400px;
+  margin: 75px auto;
+}
+
+.game-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+}
+.game-square {
+  display: inline-grid;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  font-size: 60px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  box-shadow: 0 0 14px #111;
+  cursor: pointer;
+  border: solid 3px blueviolet;
+}
+.game-square:hover {
+  background-color: cornflowerblue;
+  border: solid 3px cornflowerblue;
+  transition: 0.5s;
+}
+
+button {
+  padding:10px;
+  color:aliceblue;
+  background-color:brown;
+  font-size: 14px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+}
+.reset:hover {
+  background-color: aliceblue;
+  color: brown;
+  transition: 0.5s;
+}
+
+#oneWinsTotal {
+  color: cadetblue;
+}
+
+#zeroWinsTotal {
+  color: darkmagenta;
+}
+
+@media only screen and (max-width: 768px) {
+body {padding:0 2%; width: 96%}
+#game {max-width: 350px; width: 350px; margin: 0; text-align: center;}
+.game-container {gap: 10px;}
+.game-square {width: 80px; height:80px}
+h1 {font-size: 34px}
+}
+
